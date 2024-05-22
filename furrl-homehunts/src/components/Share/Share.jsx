@@ -11,6 +11,11 @@ import { Context } from '../../ReactContext/Context';
 const Share = ({setCurrStatus}) => {
 
   const {productId} = useContext(Context)
+
+  const onClickClose=()=>{
+    setCurrStatus(false)
+    document.body.classList.remove("no-scroll")
+  }
   return (
     <div className='share-container'>
       <div className='container'>
@@ -46,7 +51,7 @@ const Share = ({setCurrStatus}) => {
               </a>
             </li>
         </ul>
-        <CloseIcon className='close-icon' onClick={()=>setCurrStatus(false)}/>
+        <CloseIcon className='close-icon' onClick={onClickClose}/>
       </div>
     
     </div>

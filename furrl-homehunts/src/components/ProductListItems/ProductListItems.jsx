@@ -30,7 +30,9 @@ const ProductListItems = ({results,isLoading,hasNextPage,setCurrStatus,setPageNu
         event.preventDefault()
         event.stopPropagation()
        setCurrStatus(true)
+       window.scrollTo({ top: 0, behavior: 'smooth' })
        setProductId(id)
+       document.body.classList.add("no-scroll")
     }
 
 

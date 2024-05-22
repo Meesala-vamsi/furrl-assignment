@@ -42,6 +42,10 @@
     cursor: pointer;
 }
 
+.no-scroll{
+    overflow: hidden;
+}
+
 .product-list-item:nth-child(3n) .product-detail-container .title{
     max-width: 100%;
     white-space: nowrap;
