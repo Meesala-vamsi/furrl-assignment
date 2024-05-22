@@ -1,0 +1,10 @@
+
+.share-container{
+    padding: 10px 15px;
+    color: #fff;
+}
+.share-container .copy-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

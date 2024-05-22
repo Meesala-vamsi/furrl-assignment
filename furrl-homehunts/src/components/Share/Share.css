@@ -1,0 +1,91 @@
+.share-container{
+    height: 100%;
+    width: 100%;
+    background-color: #00000068;
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    transition: 0.5s;
+    display: grid;
+    font-family: "Roboto";
+}
+
+.share-container .container{
+    background-color: #fff;
+    place-self: center;
+    padding: 18px 16px;
+    width: 90%;
+    position: relative;
+    border-radius: 15px;
+}
+
+.container .copy-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copy-btn h1{
+    font-size: max(1.5vw,18px);
+}
+
+.container .close-icon{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.media-list-container{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.media-list-container .media-list-item a{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.media-list-item .anchor {
+    color: black;
+    text-decoration: none;
+}
+
+.anchor .media-icon{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.anchor p{
+    margin-top: 0px;
+    font-size: max(1.3vw,14px);
+}
+
+.whatsapp{
+    color: rgb(50, 237, 29);
+}
+
+.linkedin{
+    color: rgb(16, 51, 207);
+}
+
+
+@media screen and (min-width:768px){
+    .share-container .container{
+        width: 40%;
+    }
+    .media-list-container{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,40 @@
+.products-container{
+    /* padding: 10px 20px; */
+    font-family: "Roboto";
+    position: relative;
+}
+
+
+
+.products-container .total-products{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.total-products h1{
+    font-size: max(1.2vw,16px);
+    font-weight: 300;
+}
+
+.total-products p{
+    color: gray;
+    font-style: italic;
+}
+
+
+
+.loader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.color-ring{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

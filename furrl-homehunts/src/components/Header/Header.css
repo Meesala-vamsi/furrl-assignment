@@ -1,0 +1,26 @@
+.header-container{
+    position: relative;
+}
+
+.header-container .header-image{
+    height: 230px;
+    width: 100%;
+}
+.header-container span{
+    background-color: gray;
+    padding: 14px 17px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 35px;
+    position: absolute;
+    z-index: 9;
+    bottom: 10%;
+    right: 10px;
+}
+
+@media screen and (min-width:900px){
+    .header-container .header-image{
+        height: 400px;
+        width: 100%;
+    }
+}

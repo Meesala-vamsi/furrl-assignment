@@ -1,0 +1,33 @@
+
+.filter-container ul{
+    display: flex;
+    overflow-x: scroll;
+    list-style: none;
+    padding: 0px 6px;
+    gap: 20px;
+}
+
+.filter-container ul li button{
+    flex-shrink: 0; 
+    padding: 6px 15px;
+    border-radius: 19px;
+    width: auto;
+    white-space: nowrap;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.filter-container ul::-webkit-scrollbar{
+    display: none;
+}
+
+.active{
+    background: blueviolet;
+    color: #fff;
+    border: 0;
+}
+.inactive{
+    color: #000;
+    border: 1px solid rgb(135, 207, 235);
+    background-color: transparent;
+}
